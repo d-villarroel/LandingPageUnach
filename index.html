@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congreso UNACH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <script src="assets/js/index.js"></script>
+</head>
+<body>
+
+    <!-- Logo de UNACH -->
+<div id="logoContainer" class="logo-container">
+    <img src="assets/img/Logo UNACH-04.png" alt="Logo UNACH" class="logo-img" id="logo">
+</div>
+
+<!-- El resto de tu contenido -->
+<div id="mainContent" class="main-content">
+<!-- Imagen Horizontal al principio -->
+
+    <div class="hero-image position-relative">
+        <img src="assets/img/Imagen1.jpg" class="img-fluid w-100" alt="Imagen Horizontal">
+        <div class="hero-text position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 class="display-4 fw-bold">Bienvenido al Congreso UNACH</h1>
+            <p class="lead">Explora las últimas innovaciones en ciencia, tecnología y educación.</p>
+        </div>
+    </div>
+
+
+<!-- Barra de Navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #003264; color: white;">
+    <div class="container">
+        <a class="navbar-brand" href="#">Congreso UNACH</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Acerca</a></li>
+                <li class="nav-item"><a class="nav-link" href="#program">Programa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#organizers">Organizadores</a></li>
+                <li class="nav-item"><a class="nav-link" href="#location">Ubicación</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Sección Acerca -->
+<section id="about" class="py-5">
+    <div class="container text-center">
+        <h2>Acerca del Congreso</h2>
+        <p>El Congreso UNACH es un evento académico de alto nivel que reúne a expertos nacionales e internacionales en los campos de la ciencia, la tecnología y la educación. Nuestro objetivo es fomentar el intercambio de conocimientos, presentar las últimas innovaciones en diversas disciplinas y promover el desarrollo académico a través de ponencias, talleres y mesas redondas.</p>
+        <p>Este año, el Congreso abordará temas clave sobre el futuro de la educación, la integración de nuevas tecnologías en el aula, así como los avances más recientes en investigación científica. Está dirigido a estudiantes, docentes, profesionales y todos aquellos interesados en conocer los avances más recientes en estos campos.</p>
+        <p>Los participantes podrán disfrutar de ponencias magistrales, conferencias interactivas y una serie de actividades que les permitirán ampliar su red de contactos, generar nuevas oportunidades de colaboración y adquirir herramientas clave para su desarrollo profesional.</p>
+        <p>Te invitamos a ser parte de este evento único y a sumarte a la discusión sobre el futuro de la educación y la ciencia. ¡Te esperamos en el Congreso UNACH!</p>
+    </div>
+</section>
+
+<!-- Sección Programa -->
+<section id="program" class="bg-light py-5">
+    <div class="container text-center">
+        <h2>Programa</h2>
+        <p>Consulta las fechas y horarios de las ponencias, talleres y actividades del congreso.</p>
+        <div class="row">
+            <!-- Ponencia 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ponencia 1</h5>
+                        <p class="card-text">Tema: Innovaciones en ciencia.</p>
+                        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#ponencia1Modal">
+                            Más Información
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ponencia 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ponencia 2</h5>
+                        <p class="card-text">Tema: Tecnologías emergentes.</p>
+                        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#ponencia2Modal">
+                            Más Información
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ponencia 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ponencia 3</h5>
+                        <p class="card-text">Tema: Educación del futuro.</p>
+                        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#ponencia3Modal">
+                            Más Información
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal para Ponencia 1 -->
+<div class="modal fade" id="ponencia1Modal" tabindex="-1" aria-labelledby="ponencia1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ponencia1ModalLabel">Ponencia 1: Innovaciones en Ciencia</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Descripción detallada sobre la ponencia 1. Aquí puedes agregar más información sobre el tema, los ponentes, objetivos, etc.</p>
+                <p><strong>Fecha y Hora:</strong> 15 de diciembre, 10:00 AM</p>
+                <p><strong>Ponente:</strong> Dr. Juan Pérez</p>
+                <p><strong>Descripción:</strong> Esta ponencia abordará las últimas innovaciones en ciencia y sus aplicaciones prácticas en la educación y la tecnología.</p>
+                <div class="mt-4">
+                    <button class="btn btn-primary">
+                        <a href="assets/pdf/Programa.pdf" target="_blank" class="text-white text-decoration-none">Ver Ponencia (PDF)</a>
+                    </button>
+                    <button class="btn btn-secondary">
+                        <a href="assets/pdf/Programa.pdf" download class="text-white text-decoration-none">Descargar Ponencia</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para Ponencia 2 -->
+<div class="modal fade" id="ponencia2Modal" tabindex="-1" aria-labelledby="ponencia2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ponencia2ModalLabel">Ponencia 2: Tecnologías Emergentes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Descripción detallada sobre la ponencia 2. Aquí puedes agregar más información sobre el tema, los ponentes, objetivos, etc.</p>
+                <p><strong>Fecha y Hora:</strong> 16 de diciembre, 11:00 AM</p>
+                <p><strong>Ponente:</strong> Dr. Luis Gómez</p>
+                <p><strong>Descripción:</strong> Esta ponencia se centrará en las tecnologías emergentes y su impacto en la educación y la ciencia.</p>
+                <div class="mt-4">
+                    <button class="btn btn-primary">
+                        <a href="assets/pdf/Programa.pdf" target="_blank" class="text-white text-decoration-none">Ver Ponencia (PDF)</a>
+                    </button>
+                    <button class="btn btn-secondary">
+                        <a href="assets/pdf/Programa.pdf" download class="text-white text-decoration-none">Descargar Ponencia</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para Ponencia 3 -->
+<div class="modal fade" id="ponencia3Modal" tabindex="-1" aria-labelledby="ponencia3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ponencia3ModalLabel">Ponencia 3: Educación del Futuro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Descripción detallada sobre la ponencia 3. Aquí puedes agregar más información sobre el tema, los ponentes, objetivos, etc.</p>
+                <p><strong>Fecha y Hora:</strong> 17 de diciembre, 12:00 PM</p>
+                <p><strong>Ponente:</strong> Dr. Carla Mendoza</p>
+                <p><strong>Descripción:</strong> En esta ponencia se discutirá cómo la educación está evolucionando y cuáles son las tendencias para el futuro.</p>
+                <div class="mt-4">
+                    <button class="btn btn-primary">
+                        <a href="assets/pdf/Programa.pdf" target="_blank" class="text-white text-decoration-none">Ver Ponencia (PDF)</a>
+                    </button>
+                    <button class="btn btn-secondary">
+                        <a href="assets/pdf/Programa.pdf" download class="text-white text-decoration-none">Descargar Ponencia</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sección Organizadores -->
+<section id="organizers" class="py-5">
+    <div class="container text-center">
+        <h2>Organizadores</h2>
+        <p>Conoce al equipo detrás del Congreso UNACH.</p>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="assets/img/ximena-pino-480x480.jpg" class="img-fluid rounded-circle mb-3" alt="Organizador 1">
+                <h5>Ximena Pino</h5>
+                <p>Director del Congreso</p>
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/jose-luis-arroyo-480x480.jpg" class="img-fluid rounded-circle mb-3" alt="Organizador 2">
+                <h5>José Luis Arroyo</h5>
+                <p>Coordinadora de Actividades</p>
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/Valeria-Villegas-Salazar-1000x1000-1-480x480.jpg" class="img-fluid rounded-circle mb-3" alt="Organizador 3">
+                <h5>Valeria Villegas</h5>
+                <p>Encargado de Ponencias</p>
+            </div>
+            <div class="col-md-3">
+                <img src="assets/img/Daniela-Penaloza-480x478.jpeg" class="img-fluid rounded-circle mb-3" alt="Organizador 4">
+                <h5>Daniela Peñaloza</h5>
+                <p>Responsable de Logística</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Ubicación -->
+<!-- Sección Ubicación -->
+<section id="location" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Ubicación</h2>
+        <div class="row">
+            <!-- Mapa a la izquierda con 63.6% de ancho -->
+            <div class="col-md-7">
+                <div class="map-responsive" style="height: 500px;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.62825270629!2d-71.99885062484901!3d-36.63769847229382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96692b0067c32257%3A0xcf3e7afdeeb783d7!2sUniversidad%20Adventista%20de%20Chile!5e1!3m2!1ses!2scl!4v1731956376861!5m2!1ses!2scl" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Información a la derecha con 36.4% de ancho -->
+            <div class="col-md-5">
+                <h4>Dirección</h4>
+                <p>Universidad Adventista del Pío X, Chillán, Región de Ñuble, Chile.</p>
+                <h4>Detalles del Congreso</h4>
+                <p><strong>Fecha:</strong> 15-17 de diciembre, 2024.</p>
+                <p><strong>Horario:</strong> 09:00 AM - 06:00 PM.</p>
+                <h4>Contacto</h4>
+                <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+                <p><strong>Correo Electrónico:</strong> <a href="mailto:contacto@unach.cl" class="text-decoration-none">contacto@unach.cl</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Sección Contacto -->
+<!-- Sección Contacto -->
+<section id="contact" class="text-white py-5" style="background-color: #003264; color: white;">
+    <div class="container text-center">
+        <h2>Contacto</h2>
+        <p>Para más información, contáctanos a través de los siguientes medios.</p>
+
+        <!-- Información de contacto -->
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h4>Nombre del Encargado</h4>
+                <p>Juan Pérez</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Correo Electrónico</h4>
+                <p><a href="mailto:contacto@unach.cl" class="text-white">contacto@unach.cl</a></p>
+            </div>
+            <div class="col-md-4">
+                <h4>Teléfono</h4>
+                <p>+56 9 1234 5678</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-center py-3" style="background-color: #031c2d; color: white;">
+    <p>&copy; 2024 Congreso UNACH. Todos los derechos reservados.</p>
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Logo de UNACH */
+.logo-container {
+    position: fixed;  /* Para que esté en la parte superior de la pantalla */
+    top: 50%;         /* Centrado verticalmente */
+    left: 50%;        /* Centrado horizontalmente */
+    transform: translate(-50%, -50%);
+    z-index: 9999;    /* Asegura que el logo se muestre encima del resto del contenido */
+    opacity: 1;       /* Comienza visible */
+    pointer-events: none;  /* Evita que el logo interrumpa la interacción con otros elementos */
+    transition: opacity 1s ease-in-out; /* Efecto de desvanecimiento */
+}
+
+.logo-container.hide {
+    opacity: 0;       /* Hace desaparecer el logo con el fade-out */
+    pointer-events: none;
+}
+
+/* Estilo para el logo */
+.logo-img {
+    width: 450px; /* Tamaño del logo */
+    height: auto;
+}
+
+/* Estilo para el contenido principal de la página */
+.main-content {
+    transition: opacity 1s ease-in-out;
+    opacity: 0; /* Comienza invisible */
+}
+
+/* Cuando se activa la clase show, el contenido se hace visible */
+.main-content.show {
+    opacity: 1;
+    display: block;
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: rgba(3, 28, 45, 1); /* Color de fondo personalizado */
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #0066CC !important;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: url('assets/img/Imagen1.jpg') no-repeat center center / cover;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#hero p {
+    font-size: 1.25rem;
+}
+
+/* Sección Acerca */
+#about {
+    padding: 4rem 0;
+}
+
+#about h2 {
+    color: #003366; /* Azul UNACH */
+}
+
+/* Sección Contacto */
+#contact {
+    background-color: #003366;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+#contact ul li strong {
+    color: #fff;
+}
